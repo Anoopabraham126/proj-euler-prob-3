@@ -1,0 +1,10 @@
+# Anoop Abraham 24-02-2018
+# Project Euler Problem 3- Largest prime factor
+# https://codereview.stackexchange.com/questions/133727/project-euler-3-largest-prime-factor
+num = 60085
+i = 2  
+while i * i < num:  
+     while num % i == 0:  
+         num = num / i  
+     i = i + 1  
+print(num)  
